@@ -27,5 +27,5 @@ module.exports = {
   trailingComma: 'none',
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-  importOrder: ['@public', '@util', '@hooks', '@components']
+  importOrder: ['@public', '@util', '@hooks', '@components', '@styles']
 };

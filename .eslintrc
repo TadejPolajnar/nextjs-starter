@@ -26,12 +26,16 @@
     "semi": ["error", "always"],
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { "ignoreRestSiblings": true }
+      {
+        "ignoreRestSiblings": true
+      }
     ],
     "react/prop-types": "off",
     "no-console": "warn",
     "react/display-name": "off",
     "react/react-in-jsx-scope": "off",
+    "arrow-body-style": "warn",
+    "react/self-closing-comp": "warn",
     "@typescript-eslint/no-explicit-any": "error",
     "@typescript-eslint/consistent-type-imports": "error",
     "@typescript-eslint/no-var-requires": "off"
