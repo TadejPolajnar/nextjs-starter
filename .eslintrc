@@ -18,26 +18,50 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": [
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
+    // Disabled indent rule as it is handled by prettier
     "indent": "off",
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single", "avoid-escape"],
-    "semi": ["error", "always"],
+    // Forces line ending to be consistent
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    // Forces single quotes
+    "quotes": [
+      "error",
+      "single",
+      "avoid-escape"
+    ],
+    // Forces to semicolon at the end of the statement
+    "semi": "warn",
+    // Enforces camelCase naming convention
+    "camelcase": "warn",
+    // Prevents console.log statements from being committed
+    "no-console": "warn",
+    // Prevent unnecessary curly braces when not needed
+    "react/jsx-curly-brace-presence": "warn",
+    // Disabled rule for using JSX without importing React
+    "react/react-in-jsx-scope": "off",
+    // Shortens return statement from arrow functions
+    "arrow-body-style": "warn",
+    // Tags that don't have children must be self-closing
+    "react/self-closing-comp": "warn",
+    // Prevents any type from being used
+    "@typescript-eslint/no-explicit-any": "error",
+    // Enforces "import type" syntax
+    "@typescript-eslint/consistent-type-imports": "error",
+    // Prevents var keyword from being used
+    "@typescript-eslint/no-var-requires": "off",
+    // Prevents unused variables from being committed
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
         "ignoreRestSiblings": true
       }
-    ],
-    "react/prop-types": "off",
-    "no-console": "warn",
-    "react/display-name": "off",
-    "react/react-in-jsx-scope": "off",
-    "arrow-body-style": "warn",
-    "react/self-closing-comp": "warn",
-    "@typescript-eslint/no-explicit-any": "error",
-    "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/no-var-requires": "off"
+    ]
   }
 }
