@@ -48,6 +48,8 @@
     "react/react-in-jsx-scope": "off",
     // Shortens return statement from arrow functions
     "arrow-body-style": "warn",
+    // Forces to user shorthand syntax truthy prop values
+    "react/jsx-boolean-value": "warn",
     // Tags that don't have children must be self-closing
     "react/self-closing-comp": "warn",
     // Prevents any type from being used
