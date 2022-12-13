@@ -15,11 +15,5 @@
   "trailingComma": "none",
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true,
-  "importOrder": [
-    "@public",
-    "@util",
-    "@hooks",
-    "@components",
-    "@styles"
-  ]
+  "importOrder": ["@public", "@util", "@hooks", "@components", "@styles"]
 }

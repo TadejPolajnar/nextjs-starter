@@ -38,8 +38,6 @@
     ],
     // Forces to semicolon at the end of the statement
     "semi": "warn",
-    // Enforces camelCase naming convention
-    "camelcase": "warn",
     // Prevents console.log statements from being committed
     "no-console": "warn",
     // Prevent unnecessary curly braces when not needed
@@ -52,6 +50,8 @@
     "react/jsx-boolean-value": "warn",
     // Tags that don't have children must be self-closing
     "react/self-closing-comp": "warn",
+    // Proptypes are not required in ts
+    "react/prop-types": "off",
     // Prevents any type from being used
     "@typescript-eslint/no-explicit-any": "error",
     // Enforces "import type" syntax
