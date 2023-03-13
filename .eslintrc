@@ -3,6 +3,13 @@
     "browser": true,
     "es2021": true
   },
+  "ignorePatterns": [
+    ".cache",
+    "package.json",
+    "**lock.json",
+    "node_modules",
+    ".next"
+  ],
   "extends": [
     "next",
     "next/core-web-vitals",
@@ -18,24 +25,14 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint"
-  ],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
     // Disabled indent rule as it is handled by prettier
     "indent": "off",
     // Forces line ending to be consistent
-    "linebreak-style": [
-      "error",
-      "unix"
-    ],
+    "linebreak-style": ["error", "unix"],
     // Forces single quotes
-    "quotes": [
-      "error",
-      "single",
-      "avoid-escape"
-    ],
+    "quotes": ["error", "single", "avoid-escape"],
     // Forces to semicolon at the end of the statement
     "semi": "warn",
     // Prevents console.log statements from being committed
